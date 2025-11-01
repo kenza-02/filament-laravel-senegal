@@ -1,61 +1,66 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 FILAMENT DEMO : Créer un Admin Panel en 5 Minutes
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Bienvenue sur le dépôt de la démo présentée par **Mouhamadou MBALLO** lors du premier événement de la **Laravel Senegal Community** (Laravel & PHP Sénégal).
 
-## Contexte
+Ce projet illustre de manière pratique comment le framework [Filament](https://filamentphp.com/) permet de générer un panneau d'administration professionnel, sécurisé et fonctionnel en un temps record, en s'appuyant uniquement sur PHP et les outils de l'écosystème TALL Stack.
 
-Ce projet a été fait dans le cadre de la première edition de Laravel Senegal avec Filament. Le 01 Novembre 2025. Il s'agit d'une gestion d'etablissement
+## ✨ Objectifs de la Démonstration
 
--   [Simple, fast routing engine](https://laravel.com/docs/routing).
--   [Powerful dependency injection container](https://laravel.com/docs/container).
--   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
--   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
--   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
--   [Robust background job processing](https://laravel.com/docs/queues).
--   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   **Vitesse :** Démontrer la création complète d'une ressource CRUD (Créer, Lire, Mettre à jour, Supprimer) en moins de 5 minutes.
+-   **Simplicité :** Montrer l'utilisation de l'API déclarative de Filament pour construire des formulaires (ex: champ `Select` pour le sexe) sans écrire de HTML ou de JavaScript.
+-   **Architecture :** Mettre en lumière l'intégration parfaite avec le **TALL Stack** (Tailwind CSS, Alpine.js, Livewire, Laravel).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Installation et Démarrage du Projet
 
-## Learning Laravel
+Le projet a été pré-installé avec Filament pour assurer un démarrage rapide de la démo.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Prérequis
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+-   PHP (version 8.1 ou supérieure)
+-   Composer
+-   Un système de base de données.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 1. Cloner le Dépôt
 
-## Laravel Sponsors
+```bash
+git clone [https://github.com/kenza-02/filament-laravel-senegal.git](https://github.com/kenza-02/filament-laravel-senegal.git)
+cd filament-laravel-senegal
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 2. Installer les Dépendances
 
-### Premium Partners
+composer install
 
--   **[Vehikl](https://vehikl.com)**
--   **[Tighten Co.](https://tighten.co)**
--   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
--   **[64 Robots](https://64robots.com)**
--   **[Curotec](https://www.curotec.com/services/technologies/laravel)**
--   **[DevSquad](https://devsquad.com/hire-laravel-developers)**
--   **[Redberry](https://redberry.international/laravel-development)**
--   **[Active Logic](https://activelogic.com)**
+### 3. Configurer l'Environnement et la Clé
 
-## Contributing
+Configurer l'Environnement et la Clé
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 4. Lancer la migration
 
-## Code of Conduct
+php artisan migrate
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 5. Créer l'Utilisateur Administrateur
 
-## Security Vulnerabilities
+php artisan make:filament-user
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 6. Lancer le Serveur de Développement
 
-## License
+php artisan serve
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 7. Accès à l'Admin Panel
+
+Ouvrez votre navigateur et accédez à : http://127.0.0.1:8000/admin
+
+Connectez-vous avec l'utilisateur créé à l'étape précédente.
+
+Explorez la ressource Étudiants pour voir l'implémentation du formulaire et de la table.
+
+## A propos de moi
+
+Présenté par : Mouhamadou MBALLO
+
+Événement : Laravel & PHP Sénégal
+
+LinkedIn : Mouhamadou MBALLO (https://www.linkedin.com/in/mouhamadou-mballo-815808275/)
+
+GitHub : kenza-02
