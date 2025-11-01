@@ -23,7 +23,7 @@ Le projet a été pré-installé avec Filament pour assurer un démarrage rapide
 ### 1. Cloner le Dépôt
 
 ```bash
-git clone [https://github.com/kenza-02/filament-laravel-senegal.git](https://github.com/kenza-02/filament-laravel-senegal.git)
+git clone https://github.com/kenza-02/filament-laravel-senegal.git
 cd filament-laravel-senegal
 ```
 
@@ -31,23 +31,19 @@ cd filament-laravel-senegal
 
 composer install
 
-### 3. Configurer l'Environnement et la Clé
-
-Configurer l'Environnement et la Clé
-
-### 4. Lancer la migration
+### 3. Lancer la migration
 
 php artisan migrate
 
-### 5. Créer l'Utilisateur Administrateur
+### 4. Créer l'Utilisateur Administrateur
 
 php artisan make:filament-user
 
-### 6. Lancer le Serveur de Développement
+### 5. Lancer le Serveur de Développement
 
 php artisan serve
 
-### 7. Accès à l'Admin Panel
+### 6. Accès à l'Admin Panel
 
 Ouvrez votre navigateur et accédez à : http://127.0.0.1:8000/admin
 
